@@ -1,0 +1,20 @@
+{
+  "name": "web-kalkulator",
+  "version": "1.0.0",
+  "description": "Kalkulator-applikasjon, som skal regne ut noen matematiske operasjoner som ikke finnes på vanlige kalkulatorer",
+  "homepage": "https://github.com/camoa016/web-kalkulator#readme",
+  "bugs": {
+    "url": "https://github.com/camoa016/web-kalkulator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camoa016/web-kalkulator.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}
