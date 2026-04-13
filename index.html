@@ -28,9 +28,20 @@
         </p>
     </div>
 
+    <div id="fibonacci">
+        <form>
+            <input name="tall" placeholder="Tall" type="number">
+            <button>Regn ut Fibonacci</button>
+        </form>
+        <p>
+            Resultatet er: <span class="resultat"></span>
+        </p>
+    </div>
+
     <script type="module">
         import { fakultet } from './fakultet.js'
         import { fizzbuzz } from './fizzbuzz.js'
+        import { fibonacci } from './fibonacci.js'
 
         // Fakultet
         function regnUtFakultet(evt) {
@@ -57,6 +68,18 @@
         document.querySelector('#fizzbuzz button')
             .addEventListener('click', e => regnUtFizzbuzz(e))
 
+
+        //Fibonacci
+        function regnUtFibonacci(evt) {
+            evt.preventDefault()
+            const input = document.querySelector('#fibonacci input')
+            const output = document.querySelector('#fibonacci .resultat')
+
+            const n = parseInt(input.value)
+            output.textContent = fibonacci(n)
+        }
+        document.querySelector('#fibonacci button')
+            .addEventListener('click', e => regnUtFibonacci(e))
     </script>
 </body>
 
