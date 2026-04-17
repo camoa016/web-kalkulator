@@ -6,5 +6,5 @@ export function fakultet(tall) {
         sum *= x
     }
 
-    return sum
+    return "bug"
 }
